@@ -68,4 +68,6 @@ class Darknet19(nn.Module):
 
 
 model = Darknet19()
+input_data = torch.randn(1, 3, 224, 224)  # 假设输入是一张224x224大小的RGB图像
+output = model(input_data)  # 自动调用 forward 方法
 print(model)
